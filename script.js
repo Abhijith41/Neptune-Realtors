@@ -75,9 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- 5. Dynamic Photo Array Definition ---
   const photos = [
-    { src: 'assets/house1.jpg', caption: 'Villa Front Exterior View - Premium 4 BHK Villa' },
-    { src: 'assets/house2.jpg', caption: 'Villa Side Elevation View - Independent Compound' },
-    { src: 'assets/house3.jpg', caption: 'Villa Overall View - Modern Architecture' }
+    { src: 'house1.jpg', caption: 'Villa Front Exterior View - Premium 4 BHK Villa' },
+    { src: 'house2.jpg', caption: 'Villa Side Elevation View - Independent Compound' },
+    { src: 'house3.jpg', caption: 'Villa Overall View - Modern Architecture' }
   ];
 
   // Dynamically add the 47 interior pictures to the array
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (i === 5) caption = 'Modern Modular Kitchen close up - Beautiful Teal & Pink Color Scheme';
     
     photos.push({
-      src: `assets/inside${i}.jpg`,
+      src: `inside${i}.jpg`,
       caption: caption
     });
   }
