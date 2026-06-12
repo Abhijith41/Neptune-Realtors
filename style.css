@@ -474,16 +474,41 @@ ul {
 }
 
 .hero-title {
-  font-size: clamp(2rem, 8vw, 3.5rem);
-  font-weight: 800;
   color: var(--color-white);
-  line-height: 1.15;
-  margin-bottom: 20px;
-  letter-spacing: -1px;
+  margin-bottom: 24px;
   word-wrap: break-word;
   word-break: break-word;
   overflow-wrap: break-word;
 }
+
+.logo-style-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.logo-title-top {
+  font-family: 'Cinzel', Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 8vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.logo-title-bottom {
+  font-family: 'Outfit', 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.1rem, 3.2vw, 1.8rem);
+  line-height: 1.1;
+  color: var(--color-gold);
+  letter-spacing: 12px;
+  margin-right: -12px;
+  text-transform: uppercase;
+}
+
 
 .hero-subtitle {
   font-size: 1.25rem;
@@ -1385,6 +1410,10 @@ ul {
   .hero-text-content {
     margin: 0 auto;
   }
+
+  .logo-style-title {
+    align-items: center;
+  }
   
   .hero-quick-specs {
     max-width: 600px;
@@ -1431,8 +1460,9 @@ ul {
     padding: 70px 0;
   }
   
-  .hero-title {
-    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  .logo-title-bottom {
+    letter-spacing: 8px;
+    margin-right: -8px;
   }
   
   .hero-subtitle {
